@@ -24,12 +24,10 @@ body{
     background-color: rgb(255, 255, 255);
     width: 450px;
     height: 320px;
-    margin: 0 auto;
-    
-    
+    margin: 0 auto;  
 }
 
-.Result{
+.card .Result{
     position: relative;
     padding: 15px;
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -37,16 +35,15 @@ body{
     height: 100%;
     text-align: center;
 }
-#res{
+.Result #res{
     position: relative;
     margin-bottom: 15px;
     padding: 5px;
     color: hsl(241, 100%, 89%);
     font-size: 14px;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
-.circle{
+.Result .circle{
     position: relative;
     background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
     width: 120px;
@@ -64,8 +61,6 @@ body{
     font-size: 40px;
     font-weight: bolder;
     height: 50px;
-    
-    
 }
 
 .circle .to{
@@ -88,21 +83,55 @@ body{
     
 }
 
-
-
-
-
-
-
-
-
-
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.summary{
+    background-color: antiquewhite;
+    position: relative;
+    padding: 15px;
+    width: 50%;
+    height: 100%;
 }
-.attribution{
-    position: absolute;
-    bottom: 5px;
+
+.summary .details{
+    position: relative;
+    background-color: aliceblue;
+    margin: auto;
+    width: 200px;
+}
+
+.details img{
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.summary .reaction{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.summary .reaction .rct{
+    margin-right: 38px;
+}
+
+.details .memory{
+    background-color: rgb(103, 138, 168);
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+
+.details .verbla{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.details .visual{
+    display: flex;
+    align-items: center;
+    height: 30px;
 }
