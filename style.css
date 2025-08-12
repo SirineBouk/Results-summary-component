@@ -2,6 +2,13 @@
     font-family: hank;
     src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
