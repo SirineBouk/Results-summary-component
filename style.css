@@ -22,9 +22,10 @@ body{
     display: flex;
     position: relative;
     background-color: rgb(255, 255, 255);
-    width: 450px;
-    height: 320px;
+    width: 480px;
+    height: 330px;
     margin: 0 auto;  
+    box-shadow: 4px 8px 20px hsla(241, 81%, 54%, 0.13);
 }
 
 .card .Result{
@@ -58,13 +59,13 @@ body{
 .circle .score{
     margin-top: 10px;
     color: hsl(0, 0%, 100%);
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bolder;
     height: 50px;
 }
 
 .circle .to{
-    color: hsl(241, 100%, 89%);
+    color: hsla(241, 100%, 89%, 0.632);
     font-size: 12px;
 }
 
@@ -84,54 +85,86 @@ body{
 }
 
 .summary{
-    background-color: antiquewhite;
     position: relative;
-    padding: 15px;
+    padding: 20px;
     width: 50%;
     height: 100%;
+}
+.summary .title{
+    font-weight: bold;
 }
 
 .summary .details{
     position: relative;
-    background-color: aliceblue;
-    margin: auto;
-    width: 200px;
+    margin:18px auto;
+    margin-bottom: 24px;
+    width: auto;
 }
-
+.details div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: small;
+    font-weight: 600;
+}
 .details img{
     margin-right: 5px;
     margin-left: 5px;
-    width: 20px;
+    width: 15px;
     flex-shrink: 0;
 }
-
-.summary .reaction{
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-    height: 30px;
+.details .res{
+    margin-left: auto;
+    margin-right: 10px;   
 }
 
-.summary .reaction .rct{
-    margin-right: 38px;
+.res .scr{
+    color: black;
+}
+.res .total{
+    color: rgb(128, 122, 122);
+}
+
+.details .reaction{
+    background-color: hsla(0, 100%, 67%, 0.055);
+    color: hsl(0, 100%, 67%);
 }
 
 .details .memory{
-    background-color: rgb(103, 138, 168);
-    display: flex;
-    align-items: center;
-    height: 30px;
+    background-color: hsla(39, 100%, 56%, 0.055);
+    color: hsl(39, 100%, 56%);
+    
 }
+
 
 
 .details .verbla{
-    display: flex;
-    align-items: center;
-    height: 30px;
+    background-color: hsla(166, 100%, 37%, 0.055);
+    color: hsl(166, 100%, 37%);
 }
 
 .details .visual{
-    display: flex;
-    align-items: center;
-    height: 30px;
+    background-color: hsl(234, 85%, 45% ,0.055);
+    color: hsl(234, 85%, 45%)
+}
+
+.summary .btn{
+    position: relative;
+    background-color: aliceblue;
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+.btn button{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+}
+
+button:hover{
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
