@@ -226,11 +226,9 @@ button:hover{
 
     .Result #des{
         color: hsl(241, 100%, 89%);
-        font-size: 15px;
-        margin: auto;
+        font-size: 15px;     
         padding: 10px;
-        width: 280px;
-        
+        width: 280px; 
     }
 
     .summary{
@@ -255,3 +253,4 @@ button:hover{
         height: 55px;
     }
 }
+
